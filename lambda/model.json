@@ -1,0 +1,117 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "in shorts",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ListAllCategories",
+                    "slots": [],
+                    "samples": [
+                        "what are the categories",
+                        "list all categories",
+                        "tell me all categories"
+                    ]
+                },
+                {
+                    "name": "ListAllHeadlines",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "category"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the headlines under {category}",
+                        "tell me the headlines related to {category}"
+                    ]
+                },
+                {
+                    "name": "ListNewsBrief",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "category"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the news brief related to {category}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "category",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "automobile"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "miscellaneous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "entertainment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "startup"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "technology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "politics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "world"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sports"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "business"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "national"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
